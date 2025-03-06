@@ -121,12 +121,12 @@ module "bastion_public_ip" {
 
   for_each = local.bastion_host_public_ips
 
-  name                    = try(each.value.name, "pip-bastion-${each.key}")
-  resource_group_name     = each.value.resource_group_name
-  location                = each.value.location
-  allocation_method       = try(each.value.allocation_method, "Static")
-  ddos_protection_mode    = try(each.value.ddos_protection_mode, "VirtualNetworkInherited")
-  ddos_protection_plan_id = try(each.value.ddos_protection_plan_id, null)
+  name                 = try(each.value.name, "pip-bastion-${each.key}")
+  resource_group_name  = each.value.resource_group_name
+  location             = each.value.location
+  allocation_method    = try(each.value.allocation_method, "Static")
+  ddos_protection_mode = try(each.value.ddos_protection_mode, "VirtualNetworkInherited")
+  # ddos_protection_plan_id = try(each.value.ddos_protection_plan_id, null)
   diagnostic_settings     = try(each.value.diagnostic_settings, null)
   domain_name_label       = try(each.value.domain_name_label, null)
   edge_zone               = try(each.value.edge_zone, null)

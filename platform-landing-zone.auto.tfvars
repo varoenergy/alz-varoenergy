@@ -147,10 +147,10 @@ management_group_settings = {
     ama_user_assigned_managed_identity_id       = "$${ama_user_assigned_managed_identity_id}"
     ama_user_assigned_managed_identity_name     = "$${ama_user_assigned_managed_identity_name}"
     log_analytics_workspace_id                  = "$${log_analytics_workspace_id}"
-    ddos_protection_plan_id                     = "$${ddos_protection_plan_id}"
-    private_dns_zone_subscription_id            = "$${subscription_id_connectivity}"
-    private_dns_zone_region                     = "$${starter_location_01}"
-    private_dns_zone_resource_group_name        = "$${dns_resource_group_name}"
+    # ddos_protection_plan_id                     = "$${ddos_protection_plan_id}"
+    private_dns_zone_subscription_id     = "$${subscription_id_connectivity}"
+    private_dns_zone_region              = "$${starter_location_01}"
+    private_dns_zone_resource_group_name = "$${dns_resource_group_name}"
   }
   subscription_placement = {
     identity = {
@@ -169,9 +169,9 @@ management_group_settings = {
   policy_assignments_to_modify = {
     alz = {
       policy_assignments = {
-        Enable-DDoS-VNET = {
-          enforcement_mode = "DoNotEnforce"
-        }
+        # Enable-DDoS-VNET = {
+        #   enforcement_mode = "DoNotEnforce"
+        # }
         Deploy-MDFC-Config-H224 = {
           parameters = {
             ascExportResourceGroupName                  = "$${asc_export_resource_group_name}"
@@ -260,8 +260,8 @@ hub_and_spoke_vnet_virtual_networks = {
       ]
       route_table_name_firewall     = "$${primary_route_table_firewall_name}"
       route_table_name_user_subnets = "$${primary_route_table_user_subnets_name}"
-      ddos_protection_plan_id       = "$${ddos_protection_plan_id}"
-      subnets                       = {}
+      # ddos_protection_plan_id       = "$${ddos_protection_plan_id}"
+      subnets = {}
       firewall = {
         subnet_address_prefix = "$${primary_firewall_subnet_address_prefix}"
         name                  = "$${primary_firewall_name}"
