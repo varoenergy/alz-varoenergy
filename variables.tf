@@ -18,6 +18,16 @@ variable "subscription_id_management" {
   description = "value of the subscription id for the Management subscription|azure_subscription_id"
 }
 
+variable "subscription_id_bs_sandbox" {
+  type        = string
+  description = "value of the subscription id for the BusinessSolutions Sandbox subscription|azure_subscription_id"
+}
+
+variable "subscription_id_platform_sandbox" {
+  type        = string
+  description = "value of the subscription id for the Platform Sandbox subscription|azure_subscription_id"
+}
+
 variable "root_parent_management_group_id" {
   type        = string
   default     = ""

@@ -44,6 +44,8 @@ locals {
     subscription_id_connectivity                                  = var.subscription_id_connectivity
     subscription_id_identity                                      = var.subscription_id_identity
     subscription_id_management                                    = var.subscription_id_management
+    subscription_id_bs_sandbox                                    = var.subscription_id_bs_sandbox
+    subscription_id_platform_sandbox                              = var.subscription_id_platform_sandbox
   }
 }
 
