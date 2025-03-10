@@ -165,6 +165,14 @@ management_group_settings = {
       subscription_id       = "$${subscription_id_management}"
       management_group_name = "management"
     }
+    bs-sandbox = {
+      subscription_id       = "$${subscription_bs_sandbox}"
+      management_group_name = "sandbox"
+    }
+    platform-sandbox = {
+      subscription_id       = "$${subscription_platform_sandbox}"
+      management_group_name = "sandbox"
+    }
   }
   policy_assignments_to_modify = {
     alz = {
