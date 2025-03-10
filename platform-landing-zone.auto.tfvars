@@ -166,11 +166,11 @@ management_group_settings = {
       management_group_name = "management"
     }
     bs-sandbox = {
-      subscription_id       = "$${subscription_bs_sandbox}"
+      subscription_id       = "$${subscription_id_bs_sandbox}"
       management_group_name = "sandbox"
     }
     platform-sandbox = {
-      subscription_id       = "$${subscription_platform_sandbox}"
+      subscription_id       = "$${subscription_id_platform_sandbox}"
       management_group_name = "sandbox"
     }
   }
