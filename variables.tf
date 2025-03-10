@@ -23,7 +23,7 @@ variable "subscription_id_bs_sandbox" {
   description = "value of the subscription id for the BusinessSolutions Sandbox subscription|azure_subscription_id"
 }
 
-variable "subscription_id_plaform_sandbox" {
+variable "subscription_id_platform_sandbox" {
   type        = string
   description = "value of the subscription id for the Platform Sandbox subscription|azure_subscription_id"
 }
